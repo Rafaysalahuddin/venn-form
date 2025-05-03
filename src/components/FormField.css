@@ -1,0 +1,17 @@
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.errorWrapper {
+  min-height: 1.5rem;
+}

@@ -1,0 +1,8 @@
+.submitButton {
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+}

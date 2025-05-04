@@ -7,11 +7,12 @@ const {
   INVALID_CORPORATION_NUMBER_LENGTH_ERROR,
   INVALID_CORPORATION_NUMBER_ERROR,
   REQUIRED,
+  NAME_LENGTH_ERROR,
 } = copy;
 
 export default Yup.object().shape({
-  firstName: Yup.string().required(REQUIRED).max(50),
-  lastName: Yup.string().required(REQUIRED).max(50),
+  firstName: Yup.string().required(REQUIRED).max(50, NAME_LENGTH_ERROR),
+  lastName: Yup.string().required(REQUIRED).max(50, NAME_LENGTH_ERROR),
   phone: Yup.string()
     .matches(phoneRegex, INVALID_PHONE_NUMBER_ERROR)
     .required(REQUIRED),

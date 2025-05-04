@@ -13,8 +13,9 @@ const useValidateCorporationNumber = () => {
       if (!res.data.valid) {
         return res.data.message || INVALID_CORPORATION_NUMBER_ERROR;
       }
-    } catch {
-      return VALIDATION_FAILED;
+    } catch (error: any) {
+      const message = error.response?.data?.message;
+      return message || VALIDATION_FAILED;
     }
   };
 };

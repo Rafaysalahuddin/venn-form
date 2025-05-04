@@ -4,7 +4,7 @@ export default {
   INVALID_CORPORATION_NUMBER_ERROR: "Invalid corporation number",
   INVALID_CORPORATION_NUMBER_LENGTH_ERROR: "Must be exactly 9 digits",
   INVALID_PHONE_NUMBER_ERROR:
-    "Must be a valid Canadian phone number with a valid area code",
+    "Must be a Canadian phone number starting with +1 and a valid area code",
   LAST_NAME: "Last Name",
   ONBOARDING_FORM: "Onboarding Form",
   PHONE_NUMBER: "Phone Number",
@@ -14,4 +14,5 @@ export default {
   SUBMIT_SUCCESS_MESSAGE: "✅ Form submitted successfully!",
   VALIDATION_FAILED: "Validation failed",
   REQUIRED: "Required",
+  NAME_LENGTH_ERROR: "Must be 50 characters or less",
 };

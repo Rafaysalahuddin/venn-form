@@ -13,4 +13,5 @@ export default {
   SUBMIT_FAILURE_MESSAGE: "❌ Submission failed.",
   SUBMIT_SUCCESS_MESSAGE: "✅ Form submitted successfully!",
   VALIDATION_FAILED: "Validation failed",
+  REQUIRED: "Required",
 };

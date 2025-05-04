@@ -18,14 +18,14 @@ body {
 h1 {
   margin: 0;
   font-size: 1.8rem;
-  font-weight: 450;
+  font-weight: 400;
   text-align: center;
 }
 
 h2 {
   margin: 0;
   font-size: 1.3rem;
-  font-weight: 450;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -45,12 +45,12 @@ button {
 }
 
 label {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 0.9rem;
   margin-bottom: 0.25rem;
 }
 
 .border {
-  border: 3px solid rgba(0, 0, 0, 0.1);
-  border-radius: 14px;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
 }

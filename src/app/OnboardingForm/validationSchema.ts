@@ -2,16 +2,20 @@ import * as Yup from "yup";
 import { phoneRegex } from "../../helpers/phoneNumberValidationRegex";
 import copy from "../../constants/copy";
 
-const { INVALID_PHONE_NUMBER_ERROR, INVALID_CORPORATION_NUMBER_LENGTH_ERROR } =
-  copy;
+const {
+  INVALID_PHONE_NUMBER_ERROR,
+  INVALID_CORPORATION_NUMBER_LENGTH_ERROR,
+  INVALID_CORPORATION_NUMBER_ERROR,
+  REQUIRED,
+} = copy;
 
 export default Yup.object().shape({
-  firstName: Yup.string().required("Required").max(50),
-  lastName: Yup.string().required("Required").max(50),
+  firstName: Yup.string().required(REQUIRED).max(50),
+  lastName: Yup.string().required(REQUIRED).max(50),
   phone: Yup.string()
     .matches(phoneRegex, INVALID_PHONE_NUMBER_ERROR)
-    .required("Required"),
+    .required(REQUIRED),
   corporationNumber: Yup.string()
     .length(9, INVALID_CORPORATION_NUMBER_LENGTH_ERROR)
-    .required("Required"),
+    .required(INVALID_CORPORATION_NUMBER_ERROR),
 });

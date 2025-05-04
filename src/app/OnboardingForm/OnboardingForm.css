@@ -3,7 +3,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 120px;
   padding: 40px 0;
 }
 
@@ -11,7 +11,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 36px;
+  padding: 30px;
   background-color: white;
   margin: 0 auto;
   width: 100%;
